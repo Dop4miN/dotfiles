@@ -1,5 +1,5 @@
 local M = {}
 M.plugins = require "custom.plugins"
--- M.mappings = require "custom.mappings"
+M.mappings = require "custom.mappings"
 
 return M

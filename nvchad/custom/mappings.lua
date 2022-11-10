@@ -1,11 +1,19 @@
--- lua/custom/mappings 
+-- lua/custom/mappings
 local M = {}
 
-M.gitsigns = {
-
+M.misc = {
   n = {
-     ["<leader>hd"] = {":Gitsigns stage_hunk<CR>", "Gitsigns stage hunk"}
-  }
+    ["<Up>"] = { "<NOP>", "Disable Up" },
+    ["<Down>"] = { "<NOP>", "Disable Down" },
+    ["<Left>"] = { "<NOP>", "Disable Left" },
+    ["<Right>"] = { "<NOP>", "Disable Right" },
+  },
 }
 
+M.nvimtree = {
+  n = {
+    ["<leader>e"] = { "<cmd> NvimTreeToggle <CR>", "   toggle nvimtree" },
+    ["<C-n>"] = { "<cmd> Telescope <CR>", "open telescope" },
+  },
+}
 return M
